@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Бутик O!BRIT — ремни, парфюмерия, аксессуары и подарочные наборы. 24 товара с доставкой по всей России.">
+    <title>Бутик O!BRIT — ремни, парфюмерия, аксессуары</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- ПРЕЛОАДЕР -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">O!BRIT</div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar scrolled" id="navbar">
+        <a href="index.html" class="nav-logo">O<span>!</span>BRIT</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#portfolio">Портфолио</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="index.html#reviews">Отзывы</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
+                🛒
+                <span class="cart-badge" id="cartBadge"></span>
+            </button>
+            <a href="index.html#booking" class="nav-cta">Записаться</a>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Главная</a>
+        <a href="index.html#portfolio">Портфолио</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#reviews">Отзывы</a>
+        <a href="index.html#booking">Записаться</a>
+    </div>
+
+    <!-- ШАПКА КАТАЛОГА -->
+    <header class="shop-page-hero">
+        <span class="section-eyebrow">Бутик O!BRIT</span>
+        <h1 class="shop-page-title">Ремни, парфюмерия<br>и аксессуары</h1>
+        <p class="section-subtitle">Коллекция, которую мы собрали сами. Каждая вещь прошла проверку руками Михаила.</p>
+        <div class="catalog-search">
+            <input type="search" id="searchInput" placeholder="Поиск: ремень, oud, кошелёк...">
+        </div>
+    </header>
+
+    <!-- КАТАЛОГ -->
+    <section class="section catalog-section">
+                <div class="catalog-filters" id="catalogFilters">
+            <button class="catalog-filter active" data-cat="all">Все товары</button>
+            <button class="catalog-filter" data-cat="belts">Ремни</button>
+            <button class="catalog-filter" data-cat="perfume">Парфюмерия</button>
+            <button class="catalog-filter" data-cat="accessories">Аксессуары</button>
+            <button class="catalog-filter" data-cat="care">Косметика</button>
+            <button class="catalog-filter" data-cat="sets">Наборы</button>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid"></div>
+
+        <div class="catalog-empty" id="catalogEmpty" hidden>
+            😕 Ничего не найдено. Попробуйте другой запрос.
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">O<span>!</span>BRIT</div>
+                <p class="footer-description">Барбершоп и бутик Михаила Иванова в Анапе. Стиль начинается здесь.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#portfolio">Портфолио</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Каталог</h4>
+                <ul>
+                    <li><a href="#" data-cat-link="belts">Ремни</a></li>
+                    <li><a href="#" data-cat-link="perfume">Парфюмерия</a></li>
+                    <li><a href="#" data-cat-link="sets">Наборы</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>📍 Анапа, ул. Горького, 60</li>
+                    <li>📞 +7 (900) 282-66-22</li>
+                    <li>🕐 10:00 - 22:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 O!BRIT. Все права защищены.</span>
+            <span>ИНН 230100402974 | ОГРНИП 321237500327770</span>
+        </div>
+    </footer>
+
+    <!-- КОРЗИНА (та же, что и на главной) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <button class="cart-close" id="cartClose" aria-label="Закрыть">×</button>
+        </div>
+
+        <div class="cart-body" id="cartBody"></div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total-row">
+                <span>Итого:</span>
+                <span class="cart-total" id="cartTotal">0 ₽</span>
+            </div>
+            <button class="btn btn-primary cart-checkout" id="checkoutBtn">Оформить заказ</button>
+        </div>
+
+        <div class="cart-checkout-form" id="checkoutForm" hidden>
+            <h4>Оформление заказа</h4>
+            <div class="form-group">
+                <label>Имя *</label>
+                <input type="text" id="orderName" placeholder="Как к вам обращаться?">
+            </div>
+            <div class="form-group">
+                <label>Телефон *</label>
+                <input type="tel" id="orderPhone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="form-group">
+                <label>Комментарий</label>
+                <input type="text" id="orderComment" placeholder="Адрес доставки или вопрос">
+            </div>
+            <button class="btn btn-primary" id="confirmOrderBtn" style="width: 100%; justify-content: center;">Подтвердить заказ</button>
+            <button class="cart-back" id="backToCartBtn">← Вернуться в корзину</button>
+        </div>
+    </aside>
+
+    <!-- УВЕДОМЛЕНИЕ -->
+    <div class="notification" id="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html>

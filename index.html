@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O!BRIT — авторский барбершоп в Анапе с 2019 года. Традиционный британский стиль, премиум-уход, собственный бутик аксессуаров и парфюмерии.">
+    <title>O!BRIT — пространство, где создают стиль</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ПРЕЛОАДЕР -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">O!BRIT</div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">O<span>!</span>BRIT</a>
+        <ul class="nav-links">
+            <li><a href="#founder">Основатель</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#school">Обучение</a></li>
+            <li><a href="shop.html">Бутик</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
+                🛒
+                <span class="cart-badge" id="cartBadge"></span>
+            </button>
+            <a href="#booking" class="nav-cta">Записаться</a>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#founder">Основатель</a>
+        <a href="#services">Услуги</a>
+        <a href="school.html">Обучение</a>
+        <a href="shop.html">Бутик</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#booking">Записаться</a>
+    </div>
+
+       <!-- HERO С ВИДЕО -->
+    <section class="hero" id="hero">
+        <div class="hero-video-container">
+            <video
+                class="hero-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                poster="media/hero-poster.jpg">
+                <source src="media/hero2.mov" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-eyebrow">Авторский барбершоп · с 2019 года · Анапа</span>
+            <h1 class="hero-title">Пространство, где создают <span class="highlight">стиль</span></h1>
+            <p class="hero-subtitle">Твой характер — в каждой детали. Традиционный британский стиль, премиальный уход и собственный бутик: парфюм, кожа и аксессуары.</p>
+                        <div class="hero-buttons">
+                <a href="https://obrit.yclients.com" target="_blank" rel="noopener" class="btn btn-primary">Записаться</a>
+                <a href="shop.html" class="btn btn-secondary">В бутик</a>
+                <a href="school.html" class="btn btn-blue">В школу</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- ОСНОВАТЕЛЬ / О НАС -->
+    <section class="section founder" id="founder">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">О нас</span>
+            <h2 class="section-title">Михаил Иванов</h2>
+        </div>
+        <div class="founder-grid">
+            <div class="founder-image fade-in-left">
+                <div class="founder-photo">
+                    <img src="media/founder.png" alt="Михаил Иванов" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="founder-badge">Основатель O!BRIT</div>
+            </div>
+            <div class="founder-info fade-in-right">
+                <h3>Михаил Иванов</h3>
+                <span class="founder-role">Основатель и топ-мастер O!BRIT</span>
+                <p class="founder-text">В 2019 году Михаил открыл O!BRIT — авторский барбершоп в традиционном британском стиле. Здесь нет конвейера: индивидуальный подход к каждому гостю, премиальная косметика, бесплатные напитки и качество стрижки, которое сохраняется до следующего визита.</p>
+                <blockquote class="founder-quote">«Пространство, где создают стиль. Твой характер — в каждой детали.»</blockquote>
+                <div class="founder-stats">
+                    <div class="founder-stat">
+                        <span class="founder-stat-number">2019</span>
+                        <span class="founder-stat-label">год основания O!BRIT</span>
+                    </div>
+                    <div class="founder-stat">
+                        <span class="founder-stat-number">3000+</span>
+                        <span class="founder-stat-label">довольных клиентов</span>
+                    </div>
+                    <div class="founder-stat">
+                        <span class="founder-stat-number">4.9</span>
+                        <span class="founder-stat-label">рейтинг на картах</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="section services" id="services">
+        <div class="section-header row-header fade-in">
+            <div>
+                <span class="section-eyebrow">Услуги и цены</span>
+                <h2 class="section-title">Барбершоп</h2>
+                <p class="section-subtitle">Самое популярное — стрижка + борода. Премиум — комплексный уход</p>
+            </div>
+            <div class="row-arrows">
+                <button class="row-arrow" data-scroll="servicesRow" data-dir="-1" aria-label="Назад">←</button>
+                <button class="row-arrow" data-scroll="servicesRow" data-dir="1" aria-label="Вперёд">→</button>
+            </div>
+        </div>
+
+        <div class="h-scroll services-row" id="servicesRow">
+            <div class="service-card">
+                <span class="service-tag">Хит</span>
+                <div class="service-icon">✂️</div>
+                <h3>Стрижка + борода</h3>
+                <div class="service-price">2 000–3 000 ₽</div>
+                <p>Самый популярный комплекс O!BRIT: стрижка и оформление бороды</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-tag premium">Премиум</span>
+                <div class="service-icon">👑</div>
+                <h3>Комплексный уход</h3>
+                <div class="service-price">от 3 500 ₽</div>
+                <p>Стрижка + борода + камуфляж: полное обновление образа</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">💇‍♂️</div>
+                <h3>Мужская стрижка</h3>
+                <div class="service-price">от 800 ₽</div>
+                <p>Классическая стрижка с учётом формы лица и типа волос</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🪒</div>
+                <h3>Королевское бритьё</h3>
+                <div class="service-price">1 700 ₽</div>
+                <p>Бритьё опасной бритвой с распариванием и уходом</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧔</div>
+                <h3>Оформление бороды</h3>
+                <div class="service-price">от 800 ₽</div>
+                <p>Моделирование формы бороды и усов опасной бритвой</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Камуфляж седины</h3>
+                <div class="service-price">1 200 ₽</div>
+                <p>Естественное окрашивание головы или бороды</p>
+            </div>
+        </div>
+
+        <!-- АБОНЕМЕНТ -->
+        <div class="membership-banner fade-in">
+            <div>
+                <h3>Годовой абонемент O!BRIT</h3>
+                <p>Скоро: фиксированная цена на стрижки и уход за бородой на целый год. Открыта предзапись — попадите в первый поток и получите бонусную скидку.</p>
+            </div>
+            <a class="btn btn-primary" href="https://wa.me/79002826622?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B2%20%D0%BF%D1%80%D0%B5%D0%B4%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D0%BD%D0%B0%20%D0%B0%D0%B1%D0%BE%D0%BD%D0%B5%D0%BC%D0%B5%D0%BD%D1%82" target="_blank" rel="noopener">Встать в предзапись</a>
+        </div>
+    </section>
+
+    <!-- ШКОЛА БАРБЕРОВ -->
+    <section class="section school" id="school">
+        <div class="school-card fade-in">
+            <div>
+                <span class="section-eyebrow">Обучение</span>
+                <h3>Школа барберов O!BRIT</h3>
+                <p style="color: var(--text-light-gray);">Учим профессии так, как работаем сами: в авторской технике, на реальных клиентах и с вниманием к каждой детали.</p>
+                <ul class="school-features">
+                    <li>Практика с первого дня на реальных клиентах</li>
+                    <li>Наставники — действующие мастера с опытом 5+ лет</li>
+                    <li>Сертификат и портфолио работ после выпуска</li>
+                    <li>Помощь с трудоустройством лучшим выпускникам</li>
+                </ul>
+                                <div class="school-buttons">
+                    <a class="btn btn-blue" href="school.html">Подробнее о школе</a>
+                    <a class="btn btn-secondary" href="https://wa.me/79002826622?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank" rel="noopener">Задать вопрос</a>
+                </div>
+            </div>
+            <div class="school-side">
+                <div class="big">5+</div>
+                <p style="color: var(--text-gray); margin-bottom: 24px;">лет опыта наставников в барберинге</p>
+                <div class="big">2019</div>
+                <p style="color: var(--text-gray); margin-bottom: 24px;">учим ремеслу с основания барбершопа</p>
+                <span class="service-tag premium">Группы до 4 человек</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- БУТИК: ТИЗЕР -->
+    <section class="section shop" id="shop">
+        <div class="section-header row-header fade-in">
+            <div>
+                <span class="section-eyebrow">Бутик</span>
+                <h2 class="section-title">Хиты сезона</h2>
+                <p class="section-subtitle">Собственный магазин: парфюм, кожаные изделия, аксессуары и премиум-косметика. Хиты — ниже, весь каталог в бутике</p>
+            </div>
+            <div class="row-arrows">
+                <button class="row-arrow" data-scroll="productsRow" data-dir="-1" aria-label="Назад">←</button>
+                <button class="row-arrow" data-scroll="productsRow" data-dir="1" aria-label="Вперёд">→</button>
+            </div>
+        </div>
+
+        <div class="h-scroll products-row" id="productsRow">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Хит</span>
+                    🧵
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Ремни</span>
+                    <h3 class="product-title">Ремень "Classic"</h3>
+                    <p class="product-description">Кожаный ремень ручной работы с классической пряжкой</p>
+                    <div class="product-footer">
+                        <span class="product-price">4 900 ₽</span>
+                        <button class="product-btn" data-name="Ремень «Classic»" data-price="4900" data-icon="🧵">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Бестселлер</span>
+                    🧴
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Парфюмерия</span>
+                    <h3 class="product-title">Туалетная вода "Oud"</h3>
+                    <p class="product-description">Восточный аромат. Ноты: уд, амбра, ваниль</p>
+                    <div class="product-footer">
+                        <span class="product-price">4 500 ₽</span>
+                        <button class="product-btn" data-name="Туалетная вода «Oud»" data-price="4500" data-icon="🧴">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Premium</span>
+                    🧵
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Ремни</span>
+                    <h3 class="product-title">Ремень "Premium"</h3>
+                    <p class="product-description">Итальянская кожа, матовая пряжка, ручная работа</p>
+                    <div class="product-footer">
+                        <span class="product-price">7 900 ₽</span>
+                        <button class="product-btn" data-name="Ремень «Premium»" data-price="7900" data-icon="🧵">В корзину</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="product-badge">Хит</span>
+                    🫙
+                </div>
+                <div class="product-info">
+                    <span class="product-category">Косметика</span>
+                    <h3 class="product-title">Масло для бороды</h3>
+                    <p class="product-description">Премиальное масло с сандалом и жожобой</p>
+                    <div class="product-footer">
+                        <span class="product-price">1 900 ₽</span>
+                        <button class="product-btn" data-name="Масло для бороды «O!BRIT»" data-price="1900" data-icon="🫙">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-cta fade-in">
+            <a href="shop.html" class="btn btn-secondary">Смотреть весь каталог →</a>
+        </div>
+    </section>
+
+    <!-- ПОРТФОЛИО: ОДНО ЗЕРКАЛО -->
+    <section class="section portfolio" id="portfolio">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Галерея работ</span>
+            <h2 class="section-title">Наши работы</h2>
+            <p class="section-subtitle">Листайте зеркало — внутри 15 лучших работ</p>
+        </div>
+
+        <div class="mirror-wrap fade-in">
+            <div class="portfolio-mirror big-mirror" id="mirrorStage">
+                <div class="mirror-lights">
+                    <span class="light"></span>
+                    <span class="light"></span>
+                    <span class="light"></span>
+                    <span class="light"></span>
+                    <span class="light"></span>
+                    <span class="light"></span>
+                    <span class="light"></span>
+                    <span class="light"></span>
+                </div>
+                <div class="portfolio-stage" id="portfolioStage"></div>
+            </div>
+
+            <div class="mirror-controls">
+                <button class="mirror-arrow" id="prevWork" aria-label="Предыдущая работа">←</button>
+                <div class="mirror-counter"><b id="workCurrent">1</b> / <span id="workTotal">15</span></div>
+                <button class="mirror-arrow" id="nextWork" aria-label="Следующая работа">→</button>
+            </div>
+
+            <div class="mirror-info" id="mirrorInfo">
+                <h3 id="workTitle">Классическая стрижка</h3>
+                <p id="workMaster">Мастер Михаил</p>
+            </div>
+        </div>
+
+        <div class="portfolio-cta fade-in">
+            <!-- Замените ссылку на вашу реальную страницу YClients -->
+            <a href="https://obrit.yclients.com" target="_blank" rel="noopener" class="btn btn-primary">Хочу так же</a>
+        </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section class="section reviews" id="reviews">
+        <div class="section-header row-header fade-in">
+            <div>
+                <span class="section-eyebrow">Отзывы</span>
+                <h2 class="section-title">Что говорят клиенты</h2>
+            </div>
+            <div class="row-arrows">
+                <button class="row-arrow" data-scroll="reviewsRow" data-dir="-1" aria-label="Назад">←</button>
+                <button class="row-arrow" data-scroll="reviewsRow" data-dir="1" aria-label="Вперёд">→</button>
+            </div>
+        </div>
+
+        <div class="h-scroll reviews-row" id="reviewsRow">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Индивидуальный подход на каждом визите. Стрижка держит форму до следующего раза — именно за это и ценю O!BRIT."</p>
+                <div class="review-author">
+                    <div class="review-avatar">👤</div>
+                    <div>
+                        <div class="review-author-name">Постоянный клиент</div>
+                        <div class="review-author-source">Яндекс Карты</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Одна из причин, по которой мне не хочется уезжать из Анапы — это О!БРИТ. Обслуживание 10 из 10!"</p>
+                <div class="review-author">
+                    <div class="review-avatar">👤</div>
+                    <div>
+                        <div class="review-author-name">Никита Пирогов</div>
+                        <div class="review-author-source">Яндекс Карты</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Михаил — художник. Вас не выпустят из кресла, пока результат не приблизится к идеалу."</p>
+                <div class="review-author">
+                    <div class="review-avatar">👤</div>
+                    <div>
+                        <div class="review-author-name">Евгений</div>
+                        <div class="review-author-source">2GIS</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Шёл по улице, зашёл подровнять бороду — и охренел, как всё круто. Алексей просто супер, знает своё дело."</p>
+                <div class="review-author">
+                    <div class="review-avatar">👤</div>
+                    <div>
+                        <div class="review-author-name">Евгений Рыжов</div>
+                        <div class="review-author-source">Яндекс Карты</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Атмосфера британской классики, кофе, внимание к деталям. Лучший барбершоп в Анапе, без вариантов."</p>
+                <div class="review-author">
+                    <div class="review-avatar">👤</div>
+                    <div>
+                        <div class="review-author-name">Dream</div>
+                        <div class="review-author-source">Яндекс Карты</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЗАПИСЬ ЧЕРЕЗ YCLIENTS -->
+    <section class="section booking" id="booking">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Запись</span>
+            <h2 class="section-title">Запись за 30 секунд</h2>
+            <p class="section-subtitle">Записывайтесь через YClients — выберите удобное время онлайн. Запись открыта до 21:00</p>
+        </div>
+
+        <div class="booking-actions fade-in">
+            <!-- Замените ссылку на вашу реальную страницу YClients -->
+            <a class="btn btn-primary" href="https://obrit.yclients.com" target="_blank" rel="noopener">Записаться через YClients</a>
+            <a class="btn btn-secondary" href="https://wa.me/79002826622" target="_blank" rel="noopener">Написать в WhatsApp</a>
+            <a class="btn btn-secondary" href="tel:+79002826622">Позвонить +7 (900) 282-66-22</a>
+        </div>
+
+        <p class="booking-note fade-in">Работаем ежедневно с 10:00 до 22:00 · Анапа, ул. Горького, 60</p>
+
+        <div class="socials-row fade-in">
+            <a class="social-pill" href="https://instagram.com/obrit.anapa" target="_blank" rel="noopener">📷 Instagram · obrit.anapa</a>
+            <a class="social-pill" href="https://vk.com/orbitanapa" target="_blank" rel="noopener">💙 VK · orbitanapa</a>
+            <a class="social-pill" href="https://t.me/+79002826622" target="_blank" rel="noopener">✈️ Telegram</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">O<span>!</span>BRIT</div>
+                <p class="footer-description">Пространство, где создают стиль. Авторский барбершоп и бутик в Анапе с 2019 года.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#founder">Основатель</a></li>
+                    <li><a href="#services">Услуги и цены</a></li>
+                    <li><a href="#school">Обучение</a></li>
+                    <li><a href="#portfolio">Галерея работ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Бутик</h4>
+                <ul>
+                    <li><a href="shop.html">Весь каталог</a></li>
+                    <li><a href="shop.html">Ремни и кожа</a></li>
+                    <li><a href="shop.html">Парфюмерия</a></li>
+                    <li><a href="shop.html">Косметика</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>📍 Анапа, ул. Горького, 60</li>
+                    <li>📞 +7 (900) 282-66-22</li>
+                    <li>🕐 10:00–22:00, запись до 21:00</li>
+                    <li>📷 @obrit.anapa</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 O!BRIT. Все права защищены.</span>
+            <span>ИНН 230100402974 | ОГРНИП 321237500327770</span>
+        </div>
+    </footer>
+
+    <!-- КОРЗИНА -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <button class="cart-close" id="cartClose" aria-label="Закрыть">×</button>
+        </div>
+
+        <div class="cart-body" id="cartBody"></div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total-row">
+                <span>Итого:</span>
+                <span class="cart-total" id="cartTotal">0 ₽</span>
+            </div>
+            <button class="btn btn-primary cart-checkout" id="checkoutBtn">Оформить заказ</button>
+        </div>
+
+        <div class="cart-checkout-form" id="checkoutForm" hidden>
+            <h4>Оформление заказа</h4>
+            <div class="form-group">
+                <label>Имя *</label>
+                <input type="text" id="orderName" placeholder="Как к вам обращаться?">
+            </div>
+            <div class="form-group">
+                <label>Телефон *</label>
+                <input type="tel" id="orderPhone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="form-group">
+                <label>Комментарий</label>
+                <input type="text" id="orderComment" placeholder="Адрес доставки или вопрос">
+            </div>
+            <button class="btn btn-primary" id="confirmOrderBtn" style="width: 100%; justify-content: center;">Подтвердить заказ</button>
+            <button class="cart-back" id="backToCartBtn">← Вернуться в корзину</button>
+        </div>
+    </aside>
+
+    <!-- УВЕДОМЛЕНИЕ -->
+    <div class="notification" id="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

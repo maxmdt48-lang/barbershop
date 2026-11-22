@@ -1,0 +1,175 @@
+/* ============================================
+   СТРАНИЦА КАТАЛОГА — в палитре интерьера O!BRIT
+   ============================================ */
+.shop-page-hero {
+    padding: 170px 60px 30px;
+}
+
+.shop-page-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+}
+
+.catalog-search {
+    max-width: 520px;
+    margin-top: 30px;
+}
+
+.catalog-search input {
+    width: 100%;
+    padding: 16px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-dark);
+    border-radius: 100px;
+    color: var(--text-white);
+    font-size: 1rem;
+    font-family: inherit;
+    transition: var(--transition-smooth);
+}
+
+.catalog-search input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 30px rgba(200, 16, 46, 0.15);
+}
+
+.catalog-section {
+    padding-top: 40px;
+}
+
+.catalog-filters {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.catalog-filter {
+    padding: 12px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-dark);
+    border-radius: 100px;
+    color: var(--text-light-gray);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.catalog-filter:hover,
+.catalog-filter.active {
+    background: var(--accent);
+    color: var(--on-accent);
+    border-color: var(--accent);
+}
+
+/* Сетка каталога */
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.catalog-grid .product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-grid .product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.catalog-grid .product-title {
+    font-size: 1.15rem;
+}
+
+.catalog-grid .product-description {
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.catalog-grid .product-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+}
+
+.catalog-grid .product-price {
+    font-size: 1.25rem;
+}
+
+.catalog-grid .product-btn {
+    width: 100%;
+}
+
+.old-price {
+    color: var(--text-gray);
+    text-decoration: line-through;
+    font-size: 0.95rem;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.catalog-empty {
+    text-align: center;
+    color: var(--text-gray);
+    padding: 60px 0;
+    font-size: 1.1rem;
+}
+
+/* ============================================
+   АДАПТИВ КАТАЛОГА
+   ============================================ */
+@media (max-width: 768px) {
+    .shop-page-hero {
+        padding: 130px 24px 20px;
+    }
+
+    .catalog-section {
+        padding: 40px 24px 80px;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .catalog-grid .product-image {
+        font-size: 3rem;
+    }
+
+    .catalog-grid .product-info {
+        padding: 14px;
+    }
+
+    .catalog-grid .product-title {
+        font-size: 1rem;
+    }
+
+    .catalog-grid .product-price {
+        font-size: 1.05rem;
+    }
+
+    .catalog-grid .product-btn {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    .catalog-filter {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .catalog-grid .product-description {
+        display: none;
+    }
+}

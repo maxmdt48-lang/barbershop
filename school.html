@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Школа барберов O!BRIT в Анапе. Обучение с нуля и продвинутый курс для мастеров: практика с первого дня, сертификат, помощь с трудоустройством.">
+    <title>Школа барберов O!BRIT — обучение в Анапе</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="school.css">
+</head>
+<body>
+    <!-- ПРЕЛОАДЕР -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">O!BRIT</div>
+    </div>
+
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar scrolled" id="navbar">
+        <a href="index.html" class="nav-logo">O<span>!</span>BRIT</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#services">Услуги</a></li>
+            <li><a href="shop.html">Бутик</a></li>
+            <li><a href="#program">Программа</a></li>
+            <li><a href="#tariffs">Тарифы</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="cart-btn" id="cartBtn" aria-label="Открыть корзину">
+                🛒
+                <span class="cart-badge" id="cartBadge"></span>
+            </button>
+            <a href="index.html#booking" class="nav-cta">Записаться</a>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- МОБИЛЬНОЕ МЕНЮ -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Главная</a>
+        <a href="index.html#services">Услуги</a>
+        <a href="shop.html">Бутик</a>
+        <a href="#program">Программа</a>
+        <a href="#tariffs">Тарифы</a>
+        <a href="index.html#booking">Записаться</a>
+    </div>
+
+    <!-- ШАПКА ШКОЛЫ -->
+    <header class="school-hero">
+        <span class="section-eyebrow">Обучение · Анапа</span>
+        <h1 class="school-title">Школа барберов <span class="school-accent">O!BRIT</span></h1>
+        <p class="section-subtitle">Учим профессии так, как работаем сами: авторская техника, реальные клиенты и внимание к каждой детали. От первой стрижки до первого чека.</p>
+        <div class="school-hero-buttons">
+            <a class="btn btn-primary" href="https://wa.me/79002826622?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20%D1%88%D0%BA%D0%BE%D0%BB%D0%B5%20%D0%B1%D0%B0%D1%80%D0%B1%D0%B5%D1%80%D0%BE%D0%B2" target="_blank" rel="noopener">Записаться на обучение</a>
+            <a class="btn btn-secondary" href="#program">Программа курса</a>
+        </div>
+    </header>
+
+    <!-- ЦИФРЫ -->
+    <section class="section school-dark">
+        <div class="school-stats fade-in">
+            <div class="school-stat">
+                <b>10</b>
+                <span>недель обучения</span>
+            </div>
+            <div class="school-stat">
+                <b>до 4</b>
+                <span>человек в группе</span>
+            </div>
+            <div class="school-stat">
+                <b>80%</b>
+                <span>времени — практика</span>
+            </div>
+            <div class="school-stat">
+                <b>1</b>
+                <span>сертификат + портфолио</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОМУ ПОДОЙДЁТ -->
+    <section class="section">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Кому подойдёт</span>
+            <h2 class="section-title">Три пути в профессию</h2>
+        </div>
+        <div class="audience-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">🎓</div>
+                <h3>С нуля</h3>
+                <p>Ни разу не держали машинку в руках? Начнём с азов и доведём до первого платного клиента.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">💈</div>
+                <h3>Действующим мастерам</h3>
+                <p>Прокачаете фейды, бороду и окрашивание. Разбор техники с наставником на ваших работах.</p>
+            </div>
+            <div class="service-card fade-in">
+                <div class="service-icon">🔄</div>
+                <h3>Смена профессии</h3>
+                <p>Пошаговый вход в ремесло с понятной траекторией: обучение — портфолио — трудоустройство.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРОГРАММА -->
+    <section class="section school-dark" id="program">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Программа</span>
+            <h2 class="section-title">6 модулей, 10 недель</h2>
+            <p class="section-subtitle">Каждый модуль заканчивается зачётом на практике</p>
+        </div>
+        <ol class="program-list">
+            <li class="program-item fade-in">
+                <span class="program-num">01</span>
+                <div>
+                    <h3>Теория и инструмент</h3>
+                    <p>Устройство машинки и ножниц, санобработка, организация рабочего места, типы волос и форм лица.</p>
+                </div>
+                <span class="program-weeks">неделя 1</span>
+            </li>
+            <li class="program-item fade-in">
+                <span class="program-num">02</span>
+                <div>
+                    <h3>Геометрия стрижки</h3>
+                    <p>Формы и пропорции, базовые машинные стрижки, окантовка, работа с насадками и высотой.</p>
+                </div>
+                <span class="program-weeks">недели 2–3</span>
+            </li>
+            <li class="program-item fade-in">
+                <span class="program-num">03</span>
+                <div>
+                    <h3>Ножницы и фейды</h3>
+                    <p>Ножничные техники, градиенты и фейды, кроп, удлинённые формы, укладка и стайлинг.</p>
+                </div>
+                <span class="program-weeks">недели 4–5</span>
+            </li>
+            <li class="program-item fade-in">
+                <span class="program-num">04</span>
+                <div>
+                    <h3>Борода и опасная бритва</h3>
+                    <p>Моделирование бороды и усов, королевское бритьё с распариванием, уход за кожей.</p>
+                </div>
+                <span class="program-weeks">недели 6–7</span>
+            </li>
+            <li class="program-item fade-in">
+                <span class="program-num">05</span>
+                <div>
+                    <h3>Окрашивание и камуфляж</h3>
+                    <p>Камуфляж седины головы и бороды, подбор тона, естественный результат без «парика».</p>
+                </div>
+                <span class="program-weeks">неделя 8</span>
+            </li>
+            <li class="program-item fade-in">
+                <span class="program-num">06</span>
+                <div>
+                    <h3>Практика и экзамен</h3>
+                    <p>Реальные клиенты в зале барбершопа, съёмка портфолио, экзамен и защита работ.</p>
+                </div>
+                <span class="program-weeks">недели 9–10</span>
+            </li>
+        </ol>
+    </section>
+
+    <!-- КАК ПРОХОДИТ -->
+    <section class="section">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Методика</span>
+            <h2 class="section-title">Как проходит обучение</h2>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card fade-in">
+                <b>ШАГ 01</b>
+                <h3>Показ наставника</h3>
+                <p>Мастер демонстрирует технику вживую и объясняет каждое движение.</p>
+            </div>
+            <div class="step-card fade-in">
+                <b>ШАГ 02</b>
+                <h3>Манекены</h3>
+                <p>Отрабатываете движения на болванках, пока рука не запомнит технику.</p>
+            </div>
+            <div class="step-card fade-in">
+                <b>ШАГ 03</b>
+                <h3>Модели</h3>
+                <p>Стрижёте живых моделей под контролем наставника, с разбором ошибок.</p>
+            </div>
+            <div class="step-card fade-in">
+                <b>ШАГ 04</b>
+                <h3>Клиенты и экзамен</h3>
+                <p>Реальные гости барбершопа, съёмка портфолио и защита выпускной работы.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- НАСТАВНИКИ -->
+    <section class="section school-dark">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Наставники</span>
+            <h2 class="section-title">Кто будет учить</h2>
+        </div>
+        <div class="mentors-grid">
+            <div class="mentor-card fade-in">
+                <div class="mentor-photo">👨🦱</div>
+                <div class="mentor-info">
+                    <h3>Михаил</h3>
+                    <span class="mentor-role">Основатель O!BRIT, топ-мастер</span>
+                    <p>Опыт 5+ лет. Специализация: стрижки бороды, окрашивание и камуфляж. Ведёт модули бороды, бритвы и окрашивания.</p>
+                </div>
+            </div>
+            <div class="mentor-card fade-in">
+                <div class="mentor-photo">👨</div>
+                <div class="mentor-info">
+                    <h3>Алексей</h3>
+                    <span class="mentor-role">Мастер O!BRIT</span>
+                    <p>Опыт 5+ лет. Специалист по удлинённым стилям и бородам. Ведёт модули ножничных техник и фейдов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ТАРИФЫ -->
+    <section class="section" id="tariffs">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">Тарифы</span>
+            <h2 class="section-title">Два формата обучения</h2>
+            <p class="section-subtitle">Стоимость и расписание ближайшей группы уточняйте у администратора</p>
+        </div>
+        <div class="tariffs-grid">
+            <div class="tariff-card featured fade-in">
+                <span class="service-tag">Основной курс</span>
+                <h3>С нуля</h3>
+                <div class="tariff-price">10 недель · полная программа</div>
+                <ul class="tariff-features">
+                    <li>Все 6 модулей программы</li>
+                    <li>Практика на моделях и реальных клиентах</li>
+                    <li>Инструмент школы на время обучения</li>
+                    <li>Сертификат и съёмка портфолио</li>
+                    <li>Помощь с трудоустройством</li>
+                </ul>
+                <a class="btn btn-primary" href="https://wa.me/79002826622?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BD%D0%B0%20%D0%BA%D1%83%D1%80%D1%81%20%C2%AB%D0%A1%20%D0%BD%D1%83%D0%BB%D1%8F%C2%BB" target="_blank" rel="noopener">Узнать стоимость</a>
+            </div>
+            <div class="tariff-card fade-in">
+                <span class="service-tag premium">Для мастеров</span>
+                <h3>Продвинутый курс</h3>
+                <div class="tariff-price">4 недели · повышение квалификации</div>
+                <ul class="tariff-features">
+                    <li>Фейды и градиенты без пробелов</li>
+                    <li>Борода и опасная бритва</li>
+                    <li>Окрашивание и камуфляж седины</li>
+                    <li>Разбор вашей техники с наставником</li>
+                </ul>
+                <a class="btn btn-blue" href="https://wa.me/79002826622?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D1%83%D0%B5%D1%82%20%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D1%8B%D0%B9%20%D0%BA%D1%83%D1%80%D1%81" target="_blank" rel="noopener">Узнать стоимость</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ВОПРОСЫ -->
+    <section class="section school-dark" id="faq">
+        <div class="section-header fade-in">
+            <span class="section-eyebrow">FAQ</span>
+            <h2 class="section-title">Частые вопросы</h2>
+        </div>
+        <div class="faq-list fade-in">
+            <details>
+                <summary>Можно ли учиться без опыта?</summary>
+                <p>Да, курс «С нуля» рассчитан именно на старт с нуля: первый модуль полностью посвящён теории и инструменту.</p>
+            </details>
+            <details>
+                <summary>Нужны ли свои инструменты?</summary>
+                <p>На время обучения школа выдаёт инструмент. К выпуску поможем собрать личный набор под ваш бюджет.</p>
+            </details>
+            <details>
+                <summary>Какое расписание занятий?</summary>
+                <p>График согласуется с группой: есть утренние и вечерние слоты, чтобы совмещать с работой.</p>
+            </details>
+            <details>
+                <summary>Помогаете ли с трудоустройством?</summary>
+                <p>Лучших выпускников берём в стажёры и в команду O!BRIT, остальным помогаем с портфолио и рекомендациями.</p>
+            </details>
+            <details>
+                <summary>Что я получу в конце?</summary>
+                <p>Сертификат школы O!BRIT, съёмку портфолио с лучшими работами и опыт работы с реальными клиентами.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- ФИНАЛЬНЫЙ ПРИЗЫВ -->
+    <section class="section">
+        <div class="school-cta fade-in">
+            <h2>Твой первый клиент уже ждёт</h2>
+            <p>Группы до 4 человек — мест мало. Узнайте дату старта ближайшей группы и забронируйте место.</p>
+            <div class="school-cta-buttons">
+                <a class="btn btn-primary" href="https://wa.me/79002826622?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9A%D0%BE%D0%B3%D0%B4%D0%B0%20%D1%81%D1%82%D0%B0%D1%80%D1%82%20%D0%B1%D0%BB%D0%B8%D0%B6%D0%B0%D0%B9%D1%88%D0%B5%D0%B9%20%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D1%8B?" target="_blank" rel="noopener">Написать в WhatsApp</a>
+                <a class="btn btn-secondary" href="https://t.me/+79002826622" target="_blank" rel="noopener">Telegram</a>
+                <a class="btn btn-secondary" href="tel:+79002826622">+7 (900) 282-66-22</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">O<span>!</span>BRIT</div>
+                <p class="footer-description">Пространство, где создают стиль. Барбершоп и школа барберов в Анапе с 2019 года.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="shop.html">Бутик</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Школа</h4>
+                <ul>
+                    <li><a href="#program">Программа</a></li>
+                    <li><a href="#tariffs">Тарифы</a></li>
+                    <li><a href="#faq">Вопросы</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>📍 Анапа, ул. Горького, 60</li>
+                    <li>📞 +7 (900) 282-66-22</li>
+                    <li>🕐 10:00–22:00, запись до 21:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 O!BRIT. Все права защищены.</span>
+            <span>ИНН 230100402974 | ОГРНИП 321237500327770</span>
+        </div>
+    </footer>
+
+    <!-- КОРЗИНА (общая с остальным сайтом) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Корзина</h3>
+            <button class="cart-close" id="cartClose" aria-label="Закрыть">×</button>
+        </div>
+        <div class="cart-body" id="cartBody"></div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-total-row">
+                <span>Итого:</span>
+                <span class="cart-total" id="cartTotal">0 ₽</span>
+            </div>
+            <button class="btn btn-primary cart-checkout" id="checkoutBtn">Оформить заказ</button>
+        </div>
+        <div class="cart-checkout-form" id="checkoutForm" hidden>
+            <h4>Оформление заказа</h4>
+            <div class="form-group">
+                <label>Имя *</label>
+                <input type="text" id="orderName" placeholder="Как к вам обращаться?">
+            </div>
+            <div class="form-group">
+                <label>Телефон *</label>
+                <input type="tel" id="orderPhone" placeholder="+7 (___) ___-__-__">
+            </div>
+            <div class="form-group">
+                <label>Комментарий</label>
+                <input type="text" id="orderComment" placeholder="Адрес доставки или вопрос">
+            </div>
+            <button class="btn btn-primary" id="confirmOrderBtn" style="width: 100%; justify-content: center;">Подтвердить заказ</button>
+            <button class="cart-back" id="backToCartBtn">← Вернуться в корзину</button>
+        </div>
+    </aside>
+
+    <!-- УВЕДОМЛЕНИЕ -->
+    <div class="notification" id="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
